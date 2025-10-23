@@ -13,11 +13,15 @@ from pathlib import Path
 from typing import Any
 
 import pyautogui
-import pydirectinput
 import pyperclip
 import requests
 import yaml
 from pynput.keyboard import Key, KeyCode, Listener
+
+if platform.system() == "Windows":
+    import pydirectinput
+else:
+    pydirectinput = None
 
 S_IN_HOUR = 3600
 POE1_CURRENCY_API_URL = "https://poe.ninja/api/data/currencyoverview"

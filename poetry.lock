@@ -225,6 +225,7 @@ description = "Python mouse and keyboard input automation for Windows using Dire
 optional = false
 python-versions = ">=3.4"
 groups = ["main"]
+markers = "platform_system == \"Windows\""
 files = [
     {file = "PyDirectInput-1.0.4-py3-none-any.whl", hash = "sha256:238bbe97f505f9c8728a47ea6a787750dbe834ec1fb42b98b3d703d827eda83e"},
     {file = "PyDirectInput-1.0.4.tar.gz", hash = "sha256:bebe65102c69208688402f9f4cbd2ae7afc174fd2123e156e178b1304e7f80a2"},
@@ -706,4 +707,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.15"
-content-hash = "a81ca2db7a534e588f88ca3549b82991bb0fab7b56e7685669fe914c31360c5a"
+content-hash = "24ea3e15f7dac31e7f5412517df96af30636399e8bb50b1355305db4242da4b4"
